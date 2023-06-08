@@ -126,7 +126,7 @@ int initialize(int** a)
 	/* 배열이 NULL인 경우 메모리 할당 */
     if(*a == NULL) {
         temp = (int*)malloc(sizeof(int) * MAX_ARRAY_SIZE);
-        *a = temp;  /* 할당된 메모리의 주소를 복사 --> 제어를 main 함수로 반환하여 사용 가능 */
+        *a = temp;  /* 할당된 메모리의 주소를 복사 -->  main 함수에서 control할 수 있음 */
     } else
         temp = *a;
 
